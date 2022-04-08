@@ -1,0 +1,33 @@
+{
+    "training": [{
+            "date": "2020-01-01",
+            "id": "1",
+            "title": "Training 1",
+            "longDescription": "This is a long description of the training 1",
+            "shortDescription": "This is a short description of the training 1",
+            "time": "1:00",
+            "distance": 1.0,
+            "pace": "10:23"
+        },
+        {
+            "date": "2020-01-02",
+            "id": "2",
+            "title": "Training 2",
+            "longDescription": "This is a long description of the training 1",
+            "shortDescription": "This is a short description of the training 1",
+            "time": "1:00",
+            "distance": 5.0,
+            "pace": "10:23"
+        },
+        {
+            "date": "2020-01-03",
+            "id": "3",
+            "title": "Training 3",
+            "longDescription": "This is a long description of the training 1",
+            "shortDescription": "This is a short description of the training 1",
+            "time": "1:00",
+            "distance": 10.0,
+            "pace": "10:23"
+        }
+    ]
+}
