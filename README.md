@@ -1,4 +1,6 @@
-# coopah
+# coopah clone
+
+Credits: coopah.com
 
 The app uses Bloc state management and features are split into data, domain and presentation (as per clean architecture). 
 
