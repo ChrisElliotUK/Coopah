@@ -37,8 +37,10 @@ class VideoBloc extends Bloc<VideoEvent, VideoState> {
 
   Future<void> _onTogglePlay(TogglePlay event, Emitter<VideoState> emit) async {
     if (state.playing == true) {
+      state.controller.pause();
       emit(state.copyWith(playing: false));
     } else {
+      state.controller.play();
       emit(state.copyWith(playing: true));
     }
   }
