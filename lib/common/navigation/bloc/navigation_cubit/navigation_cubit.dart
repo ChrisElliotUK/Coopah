@@ -6,6 +6,6 @@ part 'navigation_state.dart';
 class NavigationCubit extends Cubit<NavigationState> {
   NavigationCubit() : super(const NavigationState());
 
-  void setNavigationItem(NavigationItem navigationItem) =>
-      emit(NavigationState(navigationItem: navigationItem));
+  void setNavigationItem(NavigationItem navigationItem, int index) =>
+      emit(NavigationState(navigationItem: navigationItem, index: index));
 }

@@ -11,7 +11,7 @@ class RootScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BlocBuilder<NavigationCubit, NavigationState>(
-        builder: (context, state) => const BottomNavBar(),
+        builder: (context, state) => BottomNavBar(state: state),
       ),
       body: BlocBuilder<NavigationCubit, NavigationState>(
           builder: (context, state) {
