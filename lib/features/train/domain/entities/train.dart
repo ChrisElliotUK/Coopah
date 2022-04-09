@@ -17,41 +17,43 @@ class Train extends Equatable {
 }
 
 class TrainSession extends Equatable {
-  const TrainSession({
-    required this.title,
-    required this.sessionsTime,
-    required this.session,
-    required this.sessionsDescription,
-  });
+  const TrainSession(
+      {required this.title,
+      required this.sessionsTime,
+      required this.sessionsDescription,
+      this.session,
+      this.sessionVideo});
 
   final String title;
   final String sessionsTime;
   final String sessionsDescription;
-  final List<Session> session;
+  final List<Session>? session;
+  final String? sessionVideo;
 
   @override
-  List<Object> get props => [
+  List<Object?> get props => [
         title,
         sessionsTime,
         session,
+        sessionVideo,
       ];
 }
 
 class Session extends Equatable {
   const Session({
-    required this.sessionTitle,
-    required this.sessionTime,
-    required this.sessionDistance,
-    required this.sessionPace,
+    this.sessionTitle,
+    this.sessionTime,
+    this.sessionDistance,
+    this.sessionPace,
   });
 
-  final String sessionTitle;
-  final String sessionTime;
-  final String sessionDistance;
-  final String sessionPace;
+  final String? sessionTitle;
+  final String? sessionTime;
+  final String? sessionDistance;
+  final String? sessionPace;
 
   @override
-  List<Object> get props => [
+  List<Object?> get props => [
         sessionTitle,
         sessionTime,
         sessionDistance,

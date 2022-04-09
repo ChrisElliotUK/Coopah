@@ -1,4 +1,3 @@
-import 'package:coopah/features/train/data/repository/train_repository_impl.dart';
 import 'package:coopah/features/train/presentation/bloc/training_cubit/training_cubit.dart';
 import 'package:coopah/features/train/presentation/widgets/info_box/info_box.dart';
 import 'package:coopah/features/train/presentation/widgets/training_list/training_list.dart';

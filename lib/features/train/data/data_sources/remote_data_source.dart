@@ -18,7 +18,9 @@ class TrainRemoteDataSourceImpl implements TrainRemoteDataSource {
         await rootBundle.loadString('assets/data/dummy_data_training.json');
     try {
       final List<Train> result = trainingModelFromJson(response);
-
+      if (kDebugMode) {
+        print(result);
+      }
       return result;
     } catch (e) {
       if (kDebugMode) {
