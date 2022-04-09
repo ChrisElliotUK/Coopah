@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 /// If [iconData] is null then the [OutlinedButton] will not display an icon.
 /// [buttonText] is the text displayed on the [OutlinedButton].
 /// [bodyText] is the text displayed on the body of the [InfoBox].
-/// if [height] is null then the default height of the [InfoBox] will be used.
+/// if [bigHeight] or [smallHeight] is null then the default height of the [InfoBox] will be used.
 /// The default height is the screen height / 5 if the screen width is bigger then 375.
 /// If the screen width is smaller then 375 then the default height is the screen height / 4.
 class InfoBox extends StatelessWidget {
@@ -12,14 +12,16 @@ class InfoBox extends StatelessWidget {
       {Key? key,
       required this.bodyText,
       required this.buttonText,
-      this.height,
+      this.bigHeight,
+      this.smallHeight,
       this.iconData})
       : super(key: key);
 
   final String bodyText;
   final String buttonText;
   final IconData? iconData;
-  final double? height;
+  final double? bigHeight;
+  final double? smallHeight;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -38,7 +40,7 @@ class InfoBox extends StatelessWidget {
 
   Widget _buildBigContainer(BuildContext context) {
     return Container(
-      height: height ?? MediaQuery.of(context).size.height / 5,
+      height: bigHeight ?? MediaQuery.of(context).size.height / 5,
       padding: const EdgeInsets.all(16),
       child:
           _Body(bodyText: bodyText, buttonText: buttonText, iconData: iconData),
@@ -47,7 +49,7 @@ class InfoBox extends StatelessWidget {
 
   Widget _buildSmallContainer(BuildContext context) {
     return Container(
-      height: height ?? MediaQuery.of(context).size.height / 4,
+      height: smallHeight ?? MediaQuery.of(context).size.height / 4,
       padding: const EdgeInsets.all(16),
       child:
           _Body(bodyText: bodyText, buttonText: buttonText, iconData: iconData),

@@ -16,7 +16,7 @@ class CustomVideoPlayer extends StatelessWidget {
     return BlocBuilder<VideoBloc, VideoState>(
       builder: (context, state) {
         return AspectRatio(
-          aspectRatio: 1.78,
+          aspectRatio: state.controller.value.aspectRatio,
           key: ValueKey(state.loaded),
           child: state.notLoaded
               ? Center(child: CircularProgressIndicator())
