@@ -1,16 +1,7 @@
 # coopah
 
-A new Flutter project.
+The app uses Bloc state management and features are split into data, domain and presentation (as per clean architecture). 
 
-## Getting Started
+It pulls in some dummy json data that I created to roughly match the data in the training screen.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+It uses theming rather than constant colors so dark mode will work nicely on your screen and I have included a bloc that would allow the user to set light or dark mode but I have not yet implemented the caching aspect as I have not done a profile screen. Dark mode will work if you put your phone in dark mode. 
