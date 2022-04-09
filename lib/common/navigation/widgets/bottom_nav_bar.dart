@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class BottomNavBar extends StatelessWidget {
-  const BottomNavBar({Key? key}) : super(key: key);
-
+  const BottomNavBar({Key? key, required this.state}) : super(key: key);
+  final NavigationState state;
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      currentIndex: state.index,
       items: const [
         BottomNavigationBarItem(
           icon: Icon(Icons.calendar_today),
@@ -28,19 +29,19 @@ class BottomNavBar extends StatelessWidget {
         switch (index) {
           case 0:
             BlocProvider.of<NavigationCubit>(context)
-                .setNavigationItem(NavigationItem.train);
+                .setNavigationItem(NavigationItem.train, index);
             break;
           case 1:
             BlocProvider.of<NavigationCubit>(context)
-                .setNavigationItem(NavigationItem.rewards);
+                .setNavigationItem(NavigationItem.rewards, index);
             break;
           case 2:
             BlocProvider.of<NavigationCubit>(context)
-                .setNavigationItem(NavigationItem.club);
+                .setNavigationItem(NavigationItem.club, index);
             break;
           case 3:
             BlocProvider.of<NavigationCubit>(context)
-                .setNavigationItem(NavigationItem.profile);
+                .setNavigationItem(NavigationItem.profile, index);
             break;
         }
       },
