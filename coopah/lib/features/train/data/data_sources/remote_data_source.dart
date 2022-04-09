@@ -16,7 +16,7 @@ class TrainRemoteDataSourceImpl implements TrainRemoteDataSource {
     /// The dummy list is in assets/data/dummy_data_training.json
 
     final String response =
-        await rootBundle.loadString('assets/data/dummy.json');
+        await rootBundle.loadString('assets/data/dummy_data_training.json');
     try {
       final List<Train> result = (json.decode(response) as List)
           .map((i) => TrainModel.fromJson(i))
