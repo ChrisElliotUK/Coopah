@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>613879965674-p3tnqdlhej90lem853j5ncebd3eitu3j.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.613879965674-p3tnqdlhej90lem853j5ncebd3eitu3j</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>613879965674-2in8ljhoej2ikuqmsbdbp965th9qqrl3.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyADCD37-9x2u9gddzrpCEGrbGsnRnQ1w-E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>613879965674</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hlthnetwork.hlth.run</string>
+	<key>PROJECT_ID</key>
+	<string>hlth-fitness-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hlth-fitness-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<true/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:613879965674:ios:ab9281d0eb4278b1a57493</string>
+	<key>DATABASE_URL</key>
+	<string>https://hlth-fitness-app-default-rtdb.europe-west1.firebasedatabase.app</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-5532123119099215~7743832530</string>
+</dict>
+</plist>

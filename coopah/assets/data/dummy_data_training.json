@@ -1,0 +1,81 @@
+[{
+        "date": "Apr 10, Sunday",
+        "sessions": [{
+            "title": "Build Up 1-30",
+            "sessionsTime": "your choice",
+            "sessionsDescription": "Today is a build up run. Your training plan will start properly from next week so use this session to get yourself mentally and physically prepped for the hard work ahead. Take the pace easy, walk if you need to but try and spend 30 minutes on your feet and getting into your running mindset.",
+            "session": [{
+                "sessionTitle": "Easy Run",
+                "sessionTime": "30m",
+                "sessionDistance": "-",
+                "sessionPace": "05:35"
+            }]
+        }]
+    },
+    {
+        "date": "Apr 11, Monday",
+        "sessions": [{
+            "title": "S&C Intro",
+            "sessionsTime": "your choice",
+            "sessionsDescription": "Today is a build up run. Your training plan will start properly from next week so use this session to get yourself mentally and physically prepped for the hard work ahead. Take the pace easy, walk if you need to but try and spend 30 minutes on your feet and getting into your running mindset.",
+            "session": [{
+                    "sessionTitle": "Easy Run",
+                    "sessionTime": "30m",
+                    "sessionDistance": "-",
+                    "sessionPace": "05:35"
+                }]},
+                {
+                    "title": "Bodyweight home workout",
+                    "sessionsTime": "your choice",
+                    "sessionsDescription": "Today is a build up run. Your training plan will start properly from next week so use this session to get yourself mentally and physically prepped for the hard work ahead. Take the pace easy, walk if you need to but try and spend 30 minutes on your feet and getting into your running mindset.",
+                    "session": [{
+                        "sessionTitle": "Easy Run",
+                        "sessionTime": "30m",
+                        "sessionDistance": "-",
+                        "sessionPace": "05:35"
+                    }]
+                },
+                {
+                    "title": "Base Phase Introduction",
+                    "sessionsTime": "your choice",
+                    "sessionsDescription": "Today is a build up run. Your training plan will start properly from next week so use this session to get yourself mentally and physically prepped for the hard work ahead. Take the pace easy, walk if you need to but try and spend 30 minutes on your feet and getting into your running mindset.",
+                    "session": [{
+                        "sessionTitle": "Easy Run",
+                        "sessionTime": "30m",
+                        "sessionDistance": "-",
+                        "sessionPace": "05:35"
+                    }]
+                }
+    
+            
+        ]
+    
+    },
+    {
+        "date": "Apr 12, Tuesday",
+        "sessions": [{
+                "title": "Easy 30",
+                "sessionsTime": "your choice",
+                "sessionsDescription": "Today is a build up run. Your training plan will start properly from next week so use this session to get yourself mentally and physically prepped for the hard work ahead. Take the pace easy, walk if you need to but try and spend 30 minutes on your feet and getting into your running mindset.",
+                "session": [{
+                    "sessionTitle": "Easy Run",
+                    "sessionTime": "30m",
+                    "sessionDistance": "-",
+                    "sessionPace": "05:35"
+                }]
+            },
+            {
+                "title": "How to stay Injury Free",
+                "sessionsTime": "your choice",
+                "sessionsDescription": "Today is a build up run. Your training plan will start properly from next week so use this session to get yourself mentally and physically prepped for the hard work ahead. Take the pace easy, walk if you need to but try and spend 30 minutes on your feet and getting into your running mindset.",
+                "session": [{
+                    "sessionTitle": "Easy Run",
+                    "sessionTime": "30m",
+                    "sessionDistance": "-",
+                    "sessionPace": "05:35"
+                }]
+            }
+
+        ]
+    }
+]
