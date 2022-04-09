@@ -1,6 +1,6 @@
 import 'package:coopah/common/navigation/bloc/navigation_cubit/navigation_cubit.dart';
 import 'package:coopah/common/navigation/widgets/bottom_nav_bar.dart';
-import 'package:coopah/features/train/presentation/screens/training_screen.dart';
+import 'package:coopah/features/train/presentation/screens/training_root_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -28,7 +28,7 @@ class RootScreen extends StatelessWidget {
             child: Text('Profile'),
           );
         } else {
-          return const TrainingScreen();
+          return const TrainingRootScreen();
         }
       }),
     );

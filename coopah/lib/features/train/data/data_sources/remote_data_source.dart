@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:coopah/features/train/data/models/train_model.dart';
 import 'package:coopah/features/train/domain/entities/train.dart';
 import 'package:flutter/foundation.dart';

@@ -2,34 +2,11 @@ import 'package:coopah/features/train/data/repository/train_repository_impl.dart
 import 'package:coopah/features/train/presentation/bloc/training_cubit/training_cubit.dart';
 import 'package:coopah/features/train/presentation/widgets/info_box/info_box.dart';
 import 'package:coopah/features/train/presentation/widgets/training_list/training_list.dart';
-import 'package:coopah/features/train/presentation/widgets/training_screen_tabs/training_screen_tabs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class TrainingScreen extends StatelessWidget {
   const TrainingScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: const TrainingScreenTabs(),
-      ),
-      body: RepositoryProvider(
-        create: (context) => TrainRepositoryImpl(),
-        child: BlocProvider(
-            create: (context) =>
-                TrainingCubit(repository: context.read<TrainRepositoryImpl>())
-                  ..getTrainingItems(),
-            child: const TrainingPageItems()),
-      ),
-    );
-  }
-}
-
-class TrainingPageItems extends StatelessWidget {
-  const TrainingPageItems({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

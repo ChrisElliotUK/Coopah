@@ -41,6 +41,7 @@ class TrainModelSession extends TrainSession {
           sessionsDescription: sessionsDescription,
         );
 
+  @override
   final String title;
   final String sessionsTime;
   final List<SessionModel> session;
