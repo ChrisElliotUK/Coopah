@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:coopah/features/train/data/models/train_model.dart';
 import 'package:coopah/features/train/domain/entities/train.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 abstract class TrainRemoteDataSource {
@@ -18,12 +19,13 @@ class TrainRemoteDataSourceImpl implements TrainRemoteDataSource {
     final String response =
         await rootBundle.loadString('assets/data/dummy_data_training.json');
     try {
-      final List<Train> result = (json.decode(response) as List)
-          .map((i) => TrainModel.fromJson(i))
-          .toList();
+      final List<Train> result = trainingModelFromJson(response);
 
       return result;
     } catch (e) {
+      if (kDebugMode) {
+        print(e.toString());
+      }
       rethrow;
     }
   }
