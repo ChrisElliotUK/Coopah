@@ -9,5 +9,9 @@ void main() {
     yield LicenseEntryWithLineBreaks(['google_fonts'], license);
   });
   WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
   runApp(const Coopah());
 }
