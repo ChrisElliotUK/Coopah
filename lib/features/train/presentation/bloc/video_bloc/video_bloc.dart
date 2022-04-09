@@ -6,10 +6,7 @@ part 'video_event.dart';
 part 'video_state.dart';
 
 class VideoBloc extends Bloc<VideoEvent, VideoState> {
-  VideoBloc()
-      : super(VideoState(
-            controller: VideoPlayerController.asset(''),
-            controlsVisible: true)) {
+  VideoBloc() : super(VideoState(controller: VideoPlayerController.asset(''))) {
     on<IntializeVideo>(_onIntializeVideo);
     on<TogglePlay>(_onTogglePlay);
     on<ToggleControls>(_onToggleControls);
