@@ -32,44 +32,51 @@ class TrainModelSession extends TrainSession {
   const TrainModelSession({
     required this.title,
     required this.sessionsTime,
-    required this.session,
+    this.session,
     required this.sessionsDescription,
+    this.sessionVideo,
   }) : super(
-          title: title,
-          sessionsTime: sessionsTime,
-          session: session,
-          sessionsDescription: sessionsDescription,
-        );
+            title: title,
+            sessionsTime: sessionsTime,
+            session: session,
+            sessionsDescription: sessionsDescription,
+            sessionVideo: sessionVideo);
 
   @override
   final String title;
   final String sessionsTime;
-  final List<SessionModel> session;
+  final List<SessionModel>? session;
   final String sessionsDescription;
+  final String? sessionVideo;
 
   factory TrainModelSession.fromJson(Map<String, dynamic> json) =>
       TrainModelSession(
         title: json["title"],
         sessionsTime: json["sessionsTime"],
-        session: List<SessionModel>.from(
-            json["session"].map((x) => SessionModel.fromJson(x))),
+        session: json["session"] == null
+            ? null
+            : List<SessionModel>.from(
+                json["session"].map((x) => SessionModel.fromJson(x))),
         sessionsDescription: json["sessionsDescription"],
+        sessionVideo:
+            json["sessionVideo"] == null ? null : json["sessionVideo"],
       );
 
-  Map<String, dynamic> toJson() => {
+  Map<String?, dynamic> toJson() => {
         "title": title,
         "sessionsTime": sessionsTime,
-        "session": List<dynamic>.from(session.map((x) => x.toJson())),
+        "session": List<dynamic>.from(session!.map((x) => x.toJson())),
+        "sessionVideo": sessionVideo,
         "sessionsDescription": sessionsDescription,
       };
 }
 
 class SessionModel extends Session {
   const SessionModel({
-    required this.sessionTitle,
-    required this.sessionTime,
-    required this.sessionDistance,
-    required this.sessionPace,
+    this.sessionTitle,
+    this.sessionTime,
+    this.sessionDistance,
+    this.sessionPace,
   }) : super(
           sessionTitle: sessionTitle,
           sessionTime: sessionTime,
@@ -77,10 +84,10 @@ class SessionModel extends Session {
           sessionPace: sessionPace,
         );
 
-  final String sessionTitle;
-  final String sessionTime;
-  final String sessionDistance;
-  final String sessionPace;
+  final String? sessionTitle;
+  final String? sessionTime;
+  final String? sessionDistance;
+  final String? sessionPace;
 
   factory SessionModel.fromJson(Map<String, dynamic> json) => SessionModel(
         sessionTitle: json["sessionTitle"],
